@@ -26,5 +26,9 @@ public class Appliance {
     public int compareTo (Appliance other) {  // Compare two serial numbers to help order them numerically later on
         return this.serialNumber.compareTo(other.serialNumber);
     }
+
+    public boolean equals (Appliance other) {
+        return this.serialNumber.equals(other.serialNumber); // boolean to check if two serial numbers are equal, passing the compared serial number as a parameter
+    }
 }
 
