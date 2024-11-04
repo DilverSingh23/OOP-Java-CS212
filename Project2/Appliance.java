@@ -1,4 +1,4 @@
-public class Appliance {
+public abstract class Appliance {
     private String serialNumber; // Private instance variable for the string serial number
 
     public Appliance (String serialNumber) {  // Constructor that takes the serial number string as a parameter
