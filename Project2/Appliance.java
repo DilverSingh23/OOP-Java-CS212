@@ -29,4 +29,3 @@ public abstract class Appliance {
         return this.serialNumber.equals(other.serialNumber); // boolean to check if two serial numbers are equal, passing the compared serial number as a parameter
     }
 }
-}
