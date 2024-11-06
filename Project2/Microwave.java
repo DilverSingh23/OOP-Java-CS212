@@ -3,7 +3,7 @@ public class Microwave extends Appliance {
     private double watts;
 
     public Microwave (String serialNumber, double price, double watts) {
-        super(stringNumber);
+        super(serialNumber);
         this.price = price;
         this.watts = watts;
     }

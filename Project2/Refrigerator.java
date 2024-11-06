@@ -13,7 +13,4 @@ public class Refrigerator extends Appliance {
         return info;
     }
 
-    
-
-
 }
