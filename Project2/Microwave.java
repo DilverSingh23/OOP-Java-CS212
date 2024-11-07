@@ -9,7 +9,7 @@ public class Microwave extends Appliance {
     }
 
     public String toString() { 
-        String info = serialNumber + " - " + "Price: $" + price + " - " + watts + " W";
+        String info = getSerialNumber() + " - " + "Price: $" + price + " - " + watts + " W";
         return info;
     }
 

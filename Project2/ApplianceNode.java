@@ -1,10 +1,10 @@
-public class ApplianceNode (Appliance d) {
-    String protected data;
-    ApplianceNode protected next;
-    
-    public ApplianceNode (String d, ApplianceNode n) {
+public class ApplianceNode {
+    protected Appliance data;
+    protected ApplianceNode next;
+
+    public ApplianceNode (Appliance d) {
         data = d;
-        next = n;
+        next = null;
     }
 
 }

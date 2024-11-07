@@ -9,7 +9,7 @@ public class Dishwasher extends Appliance {
     }
 
     public String toString() { 
-        String info = serialNumber + " - " + "Price: $" + price + " - ";
+        String info = getSerialNumber() + " - " + "Price: $" + price + " - ";
         if (installation) {
             info += " Undercounter Installation";
         }

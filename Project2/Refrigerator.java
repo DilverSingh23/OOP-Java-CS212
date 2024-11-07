@@ -9,7 +9,7 @@ public class Refrigerator extends Appliance {
     }
 
     public String toString() { 
-        String info = serialNumber + " - " + "Price: $" + price + " - " + cubicFeet + " cubic feet.";
+        String info = getSerialNumber() + " - " + "Price: $" + price + " - " + cubicFeet + " cubic feet.";
         return info;
     }
 

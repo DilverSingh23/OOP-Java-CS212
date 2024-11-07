@@ -9,7 +9,7 @@ public abstract class Appliance {
         return serialNumber;
     }
 
-    public void setSerialNumber () {  // Set method to designate the serial number value
+    public void setSerialNumber (String serialNumber) {  // Set method to designate the serial number value
         this.serialNumber = serialNumber;
     }
 

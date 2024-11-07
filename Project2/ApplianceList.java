@@ -1,13 +1,13 @@
 public abstract class ApplianceList {
-    ApplianceNode ln = new ApplianceNode();
-    private ApplianceNode first = ln;
-    private ApplianceNode last = ln;
-    private int length = 0;
+    ApplianceNode ln = new ApplianceNode(null);
+    protected ApplianceNode first = ln;
+    protected ApplianceNode last = ln;
+    protected int length = 0;
 
     public ApplianceList () {
         last.next = ln;
         last = ln;
-        length ++;
+        length++;
     }
 
     public void append (Appliance s) {
