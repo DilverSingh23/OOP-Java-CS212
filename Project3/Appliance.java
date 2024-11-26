@@ -2,7 +2,8 @@ import java.util.regex.Pattern;
 /**
  * The Appliance class is an abstract class that represents an appliance with a serial number.
  * The class provides get and set methods for the serial number, way to determine the appliance type,
- * and a way to compare appliances based on serial number.
+ * and a way to compare appliances based on serial number. If an invalid serial number is provided, 
+ * it will be printed to the terminal for the user.
  */
 public abstract class Appliance {
     private String serialNumber; // Private instance variable for the string serial number
@@ -11,6 +12,7 @@ public abstract class Appliance {
      * Constructor which takes the string serial number as a parameter
      * 
      * @param serialNumber the serial number of the appliance
+     * @throws IllegalApplianceException when the serial is deemed to be invalid through the isValid method
      */
     public Appliance (String serialNumber) throws IllegalApplianceException {  
         if(!isValid(serialNumber)){
@@ -19,6 +21,14 @@ public abstract class Appliance {
         this.serialNumber = serialNumber;
     }
 
+    /**
+     * This method uses a regex pattern and the Pattern.matches from java.util.regex.Pattern
+     * to determine if the passed serial number is valid 
+     * The regex pattern it must follow is that it must begin with an R, D, or M for appliance type
+     * And the next 11 characters must be letters A-Z or number 0-9
+     * @param serialNumber the serial number of the appliance we are checking
+     * @return true if the serial number follows the regex pattern, false if it doesn't
+     */
     public static boolean isValid (String serialNumber) {
         return Pattern.matches("^[RDM][A-Z0-9]{11}$", serialNumber);
     }
