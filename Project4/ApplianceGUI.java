@@ -73,7 +73,7 @@ public class ApplianceGUI {
 
         // Use the entrySet and iterator methods that allow us to traverse through a TreeMap until we reach 
         // a null value. At each iteration append the value of the Appliance Object which is 
-        // esstentially it's toString method to the proper text area 
+        // essentially it's toString method to the proper text area 
         var fridgeIterator = refrigerators.entrySet().iterator();
         while(fridgeIterator.hasNext()){
             var entry = fridgeIterator.next();
